@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D04469CC2922888400D05694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CB2922888400D05694 /* AppDelegate.swift */; };
+		D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CD2922888400D05694 /* SceneDelegate.swift */; };
+		D04469D02922888400D05694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CF2922888400D05694 /* ViewController.swift */; };
+		D04469D32922888400D05694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04469D12922888400D05694 /* Main.storyboard */; };
+		D04469D52922889200D05694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04469D42922889200D05694 /* Assets.xcassets */; };
+		D04469D82922889200D05694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04469D62922889200D05694 /* LaunchScreen.storyboard */; };
+		D04469E32922889900D05694 /* TheLittleForkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469E22922889900D05694 /* TheLittleForkTests.swift */; };
+		D04469ED2922889A00D05694 /* TheLittleForkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469EC2922889A00D05694 /* TheLittleForkUITests.swift */; };
+		D04469EF2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469EE2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D04469DF2922889900D05694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D04469C02922888400D05694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D04469C72922888400D05694;
+			remoteInfo = TheLittleFork;
+		};
+		D04469E92922889900D05694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D04469C02922888400D05694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D04469C72922888400D05694;
+			remoteInfo = TheLittleFork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D04469C82922888400D05694 /* TheLittleFork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLittleFork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04469CB2922888400D05694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D04469CD2922888400D05694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D04469CF2922888400D05694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D04469D22922888400D05694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D04469D42922889200D05694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D04469D72922889200D05694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D04469D92922889200D05694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D04469DE2922889900D05694 /* TheLittleForkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheLittleForkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04469E22922889900D05694 /* TheLittleForkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLittleForkTests.swift; sourceTree = "<group>"; };
+		D04469E82922889900D05694 /* TheLittleForkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheLittleForkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04469EC2922889A00D05694 /* TheLittleForkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLittleForkUITests.swift; sourceTree = "<group>"; };
+		D04469EE2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLittleForkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D04469C52922888400D05694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04469DB2922889900D05694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04469E52922889900D05694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D04469BF2922888400D05694 = {
+			isa = PBXGroup;
+			children = (
+				D04469CA2922888400D05694 /* TheLittleFork */,
+				D04469E12922889900D05694 /* TheLittleForkTests */,
+				D04469EB2922889900D05694 /* TheLittleForkUITests */,
+				D04469C92922888400D05694 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D04469C92922888400D05694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D04469C82922888400D05694 /* TheLittleFork.app */,
+				D04469DE2922889900D05694 /* TheLittleForkTests.xctest */,
+				D04469E82922889900D05694 /* TheLittleForkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D04469CA2922888400D05694 /* TheLittleFork */ = {
+			isa = PBXGroup;
+			children = (
+				D04469CB2922888400D05694 /* AppDelegate.swift */,
+				D04469CD2922888400D05694 /* SceneDelegate.swift */,
+				D04469CF2922888400D05694 /* ViewController.swift */,
+				D04469D12922888400D05694 /* Main.storyboard */,
+				D04469D42922889200D05694 /* Assets.xcassets */,
+				D04469D62922889200D05694 /* LaunchScreen.storyboard */,
+				D04469D92922889200D05694 /* Info.plist */,
+			);
+			path = TheLittleFork;
+			sourceTree = "<group>";
+		};
+		D04469E12922889900D05694 /* TheLittleForkTests */ = {
+			isa = PBXGroup;
+			children = (
+				D04469E22922889900D05694 /* TheLittleForkTests.swift */,
+			);
+			path = TheLittleForkTests;
+			sourceTree = "<group>";
+		};
+		D04469EB2922889900D05694 /* TheLittleForkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D04469EC2922889A00D05694 /* TheLittleForkUITests.swift */,
+				D04469EE2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift */,
+			);
+			path = TheLittleForkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D04469C72922888400D05694 /* TheLittleFork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04469F22922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleFork" */;
+			buildPhases = (
+				D04469C42922888400D05694 /* Sources */,
+				D04469C52922888400D05694 /* Frameworks */,
+				D04469C62922888400D05694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheLittleFork;
+			productName = TheLittleFork;
+			productReference = D04469C82922888400D05694 /* TheLittleFork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D04469DD2922889900D05694 /* TheLittleForkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04469F52922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleForkTests" */;
+			buildPhases = (
+				D04469DA2922889900D05694 /* Sources */,
+				D04469DB2922889900D05694 /* Frameworks */,
+				D04469DC2922889900D05694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D04469E02922889900D05694 /* PBXTargetDependency */,
+			);
+			name = TheLittleForkTests;
+			productName = TheLittleForkTests;
+			productReference = D04469DE2922889900D05694 /* TheLittleForkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D04469E72922889900D05694 /* TheLittleForkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04469F82922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleForkUITests" */;
+			buildPhases = (
+				D04469E42922889900D05694 /* Sources */,
+				D04469E52922889900D05694 /* Frameworks */,
+				D04469E62922889900D05694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D04469EA2922889900D05694 /* PBXTargetDependency */,
+			);
+			name = TheLittleForkUITests;
+			productName = TheLittleForkUITests;
+			productReference = D04469E82922889900D05694 /* TheLittleForkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D04469C02922888400D05694 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D04469C72922888400D05694 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D04469DD2922889900D05694 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D04469C72922888400D05694;
+					};
+					D04469E72922889900D05694 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D04469C72922888400D05694;
+					};
+				};
+			};
+			buildConfigurationList = D04469C32922888400D05694 /* Build configuration list for PBXProject "TheLittleFork" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D04469BF2922888400D05694;
+			productRefGroup = D04469C92922888400D05694 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D04469C72922888400D05694 /* TheLittleFork */,
+				D04469DD2922889900D05694 /* TheLittleForkTests */,
+				D04469E72922889900D05694 /* TheLittleForkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D04469C62922888400D05694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04469D82922889200D05694 /* LaunchScreen.storyboard in Resources */,
+				D04469D52922889200D05694 /* Assets.xcassets in Resources */,
+				D04469D32922888400D05694 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04469DC2922889900D05694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04469E62922889900D05694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D04469C42922888400D05694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04469D02922888400D05694 /* ViewController.swift in Sources */,
+				D04469CC2922888400D05694 /* AppDelegate.swift in Sources */,
+				D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04469DA2922889900D05694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04469E32922889900D05694 /* TheLittleForkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D04469E42922889900D05694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04469EF2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift in Sources */,
+				D04469ED2922889A00D05694 /* TheLittleForkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D04469E02922889900D05694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D04469C72922888400D05694 /* TheLittleFork */;
+			targetProxy = D04469DF2922889900D05694 /* PBXContainerItemProxy */;
+		};
+		D04469EA2922889900D05694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D04469C72922888400D05694 /* TheLittleFork */;
+			targetProxy = D04469E92922889900D05694 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D04469D12922888400D05694 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D04469D22922888400D05694 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D04469D62922889200D05694 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D04469D72922889200D05694 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D04469F02922889A00D05694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D04469F12922889A00D05694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D04469F32922889A00D05694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheLittleFork/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nico.mano.TheLittleFork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D04469F42922889A00D05694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheLittleFork/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nico.mano.TheLittleFork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D04469F62922889A00D05694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nico.mano.TheLittleForkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheLittleFork.app/TheLittleFork";
+			};
+			name = Debug;
+		};
+		D04469F72922889A00D05694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nico.mano.TheLittleForkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheLittleFork.app/TheLittleFork";
+			};
+			name = Release;
+		};
+		D04469F92922889A00D05694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nico.mano.TheLittleForkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheLittleFork;
+			};
+			name = Debug;
+		};
+		D04469FA2922889A00D05694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nico.mano.TheLittleForkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TheLittleFork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D04469C32922888400D05694 /* Build configuration list for PBXProject "TheLittleFork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04469F02922889A00D05694 /* Debug */,
+				D04469F12922889A00D05694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04469F22922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleFork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04469F32922889A00D05694 /* Debug */,
+				D04469F42922889A00D05694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04469F52922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleForkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04469F62922889A00D05694 /* Debug */,
+				D04469F72922889A00D05694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04469F82922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleForkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04469F92922889A00D05694 /* Debug */,
+				D04469FA2922889A00D05694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D04469C02922888400D05694 /* Project object */;
+}
