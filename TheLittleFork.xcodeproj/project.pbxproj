@@ -9,24 +9,17 @@
 /* Begin PBXBuildFile section */
 		D04469CC2922888400D05694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CB2922888400D05694 /* AppDelegate.swift */; };
 		D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CD2922888400D05694 /* SceneDelegate.swift */; };
-		D04469D02922888400D05694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CF2922888400D05694 /* ViewController.swift */; };
-		D04469D32922888400D05694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04469D12922888400D05694 /* Main.storyboard */; };
+		D04469D02922888400D05694 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CF2922888400D05694 /* MainViewController.swift */; };
 		D04469D52922889200D05694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04469D42922889200D05694 /* Assets.xcassets */; };
 		D04469D82922889200D05694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04469D62922889200D05694 /* LaunchScreen.storyboard */; };
 		D04469E32922889900D05694 /* TheLittleForkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469E22922889900D05694 /* TheLittleForkTests.swift */; };
-		D04469ED2922889A00D05694 /* TheLittleForkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469EC2922889A00D05694 /* TheLittleForkUITests.swift */; };
-		D04469EF2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469EE2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift */; };
+		D04469FF29228D9700D05694 /* SketchKit in Frameworks */ = {isa = PBXBuildFile; productRef = D04469FE29228D9700D05694 /* SketchKit */; };
+		D0446A0129228DB900D05694 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0029228DB900D05694 /* MainView.swift */; };
+		D0446A0529228E3D00D05694 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0429228E3D00D05694 /* ViewCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D04469DF2922889900D05694 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D04469C02922888400D05694 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D04469C72922888400D05694;
-			remoteInfo = TheLittleFork;
-		};
-		D04469E92922889900D05694 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D04469C02922888400D05694 /* Project object */;
 			proxyType = 1;
@@ -39,16 +32,14 @@
 		D04469C82922888400D05694 /* TheLittleFork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLittleFork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04469CB2922888400D05694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D04469CD2922888400D05694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D04469CF2922888400D05694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D04469D22922888400D05694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D04469CF2922888400D05694 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D04469D42922889200D05694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D04469D72922889200D05694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D04469D92922889200D05694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D04469DE2922889900D05694 /* TheLittleForkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheLittleForkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04469E22922889900D05694 /* TheLittleForkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLittleForkTests.swift; sourceTree = "<group>"; };
-		D04469E82922889900D05694 /* TheLittleForkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheLittleForkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D04469EC2922889A00D05694 /* TheLittleForkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLittleForkUITests.swift; sourceTree = "<group>"; };
-		D04469EE2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLittleForkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0446A0029228DB900D05694 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D0446A0429228E3D00D05694 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,17 +47,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D04469FF29228D9700D05694 /* SketchKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D04469DB2922889900D05694 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D04469E52922889900D05694 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,7 +66,6 @@
 			children = (
 				D04469CA2922888400D05694 /* TheLittleFork */,
 				D04469E12922889900D05694 /* TheLittleForkTests */,
-				D04469EB2922889900D05694 /* TheLittleForkUITests */,
 				D04469C92922888400D05694 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +75,6 @@
 			children = (
 				D04469C82922888400D05694 /* TheLittleFork.app */,
 				D04469DE2922889900D05694 /* TheLittleForkTests.xctest */,
-				D04469E82922889900D05694 /* TheLittleForkUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,12 +82,10 @@
 		D04469CA2922888400D05694 /* TheLittleFork */ = {
 			isa = PBXGroup;
 			children = (
-				D04469CB2922888400D05694 /* AppDelegate.swift */,
-				D04469CD2922888400D05694 /* SceneDelegate.swift */,
-				D04469CF2922888400D05694 /* ViewController.swift */,
-				D04469D12922888400D05694 /* Main.storyboard */,
-				D04469D42922889200D05694 /* Assets.xcassets */,
-				D04469D62922889200D05694 /* LaunchScreen.storyboard */,
+				D04469FB29228B2400D05694 /* Commons */,
+				D0446A0329228E2600D05694 /* Utils */,
+				D0446A0229228DF000D05694 /* Extensions */,
+				D04469FC29228C4B00D05694 /* Views */,
 				D04469D92922889200D05694 /* Info.plist */,
 			);
 			path = TheLittleFork;
@@ -118,13 +99,39 @@
 			path = TheLittleForkTests;
 			sourceTree = "<group>";
 		};
-		D04469EB2922889900D05694 /* TheLittleForkUITests */ = {
+		D04469FB29228B2400D05694 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				D04469EC2922889A00D05694 /* TheLittleForkUITests.swift */,
-				D04469EE2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift */,
+				D04469D62922889200D05694 /* LaunchScreen.storyboard */,
+				D04469D42922889200D05694 /* Assets.xcassets */,
+				D04469CB2922888400D05694 /* AppDelegate.swift */,
+				D04469CD2922888400D05694 /* SceneDelegate.swift */,
 			);
-			path = TheLittleForkUITests;
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		D04469FC29228C4B00D05694 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D04469CF2922888400D05694 /* MainViewController.swift */,
+				D0446A0029228DB900D05694 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0446A0229228DF000D05694 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0446A0329228E2600D05694 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0446A0429228E3D00D05694 /* ViewCodable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +141,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D04469F22922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleFork" */;
 			buildPhases = (
+				D0446A072922901E00D05694 /* Linter */,
 				D04469C42922888400D05694 /* Sources */,
 				D04469C52922888400D05694 /* Frameworks */,
 				D04469C62922888400D05694 /* Resources */,
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = TheLittleFork;
+			packageProductDependencies = (
+				D04469FE29228D9700D05694 /* SketchKit */,
+			);
 			productName = TheLittleFork;
 			productReference = D04469C82922888400D05694 /* TheLittleFork.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +176,6 @@
 			productReference = D04469DE2922889900D05694 /* TheLittleForkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D04469E72922889900D05694 /* TheLittleForkUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D04469F82922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleForkUITests" */;
-			buildPhases = (
-				D04469E42922889900D05694 /* Sources */,
-				D04469E52922889900D05694 /* Frameworks */,
-				D04469E62922889900D05694 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D04469EA2922889900D05694 /* PBXTargetDependency */,
-			);
-			name = TheLittleForkUITests;
-			productName = TheLittleForkUITests;
-			productReference = D04469E82922889900D05694 /* TheLittleForkUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +193,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = D04469C72922888400D05694;
 					};
-					D04469E72922889900D05694 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = D04469C72922888400D05694;
-					};
 				};
 			};
 			buildConfigurationList = D04469C32922888400D05694 /* Build configuration list for PBXProject "TheLittleFork" */;
@@ -215,13 +204,16 @@
 				Base,
 			);
 			mainGroup = D04469BF2922888400D05694;
+			packageReferences = (
+				D04469FD29228D9700D05694 /* XCRemoteSwiftPackageReference "SketchKit" */,
+				D0446A0629228FF000D05694 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = D04469C92922888400D05694 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D04469C72922888400D05694 /* TheLittleFork */,
 				D04469DD2922889900D05694 /* TheLittleForkTests */,
-				D04469E72922889900D05694 /* TheLittleForkUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +225,6 @@
 			files = (
 				D04469D82922889200D05694 /* LaunchScreen.storyboard in Resources */,
 				D04469D52922889200D05694 /* Assets.xcassets in Resources */,
-				D04469D32922888400D05694 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,21 +235,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D04469E62922889900D05694 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0446A072922901E00D05694 /* Linter */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Linter;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D04469C42922888400D05694 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D04469D02922888400D05694 /* ViewController.swift in Sources */,
+				D0446A0529228E3D00D05694 /* ViewCodable.swift in Sources */,
+				D04469D02922888400D05694 /* MainViewController.swift in Sources */,
+				D0446A0129228DB900D05694 /* MainView.swift in Sources */,
 				D04469CC2922888400D05694 /* AppDelegate.swift in Sources */,
 				D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */,
 			);
@@ -272,15 +279,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D04469E42922889900D05694 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D04469EF2922889A00D05694 /* TheLittleForkUITestsLaunchTests.swift in Sources */,
-				D04469ED2922889A00D05694 /* TheLittleForkUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,22 +287,9 @@
 			target = D04469C72922888400D05694 /* TheLittleFork */;
 			targetProxy = D04469DF2922889900D05694 /* PBXContainerItemProxy */;
 		};
-		D04469EA2922889900D05694 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D04469C72922888400D05694 /* TheLittleFork */;
-			targetProxy = D04469E92922889900D05694 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D04469D12922888400D05694 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D04469D22922888400D05694 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D04469D62922889200D05694 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -441,7 +426,6 @@
 				INFOPLIST_FILE = TheLittleFork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +437,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -468,7 +452,6 @@
 				INFOPLIST_FILE = TheLittleFork/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,7 +463,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -522,40 +505,6 @@
 			};
 			name = Release;
 		};
-		D04469F92922889A00D05694 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nico.mano.TheLittleForkUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheLittleFork;
-			};
-			name = Debug;
-		};
-		D04469FA2922889A00D05694 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nico.mano.TheLittleForkUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TheLittleFork;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,16 +535,34 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D04469F82922889A00D05694 /* Build configuration list for PBXNativeTarget "TheLittleForkUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D04469F92922889A00D05694 /* Debug */,
-				D04469FA2922889A00D05694 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D04469FD29228D9700D05694 /* XCRemoteSwiftPackageReference "SketchKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dogo/SketchKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		D0446A0629228FF000D05694 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D04469FE29228D9700D05694 /* SketchKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D04469FD29228D9700D05694 /* XCRemoteSwiftPackageReference "SketchKit" */;
+			productName = SketchKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D04469C02922888400D05694 /* Project object */;
 }
