@@ -36,6 +36,15 @@
       }
     },
     {
+      "identity" : "swift-snapshot-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-snapshot-testing.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "49a7e71d8a5e761c33add8aefe197387a18f9957"
+      }
+    },
+    {
       "identity" : "swift-syntax",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-syntax.git",
