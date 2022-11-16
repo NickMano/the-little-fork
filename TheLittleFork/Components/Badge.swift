@@ -38,6 +38,7 @@ final class Badge: UIView {
         let label = UILabel()
         label.text = "-"
         label.font = .restaurantType
+        label.textAlignment = .center
         label.textColor = .white
 
         return label
@@ -69,6 +70,10 @@ extension Badge: ViewCodable {
     }
 
     func setupConstraints() {
+        layout.applyConstraint { view in
+            view.widthAnchor(greaterThanOrEqualToConstant: type == .offer ? 64 : 50)
+        }
+
         iconView.layout.applyConstraint { view in
             view.widthAnchor(equalToConstant: 20)
             view.heightAnchor(equalToConstant: 20)

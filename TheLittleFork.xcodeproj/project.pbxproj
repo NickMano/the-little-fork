@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D024DB212924366B0093CA5B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = D024DB202924366B0093CA5B /* SnapshotTesting */; };
+		D024DB26292525200093CA5B /* RestaurantCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB25292525200093CA5B /* RestaurantCellTest.swift */; };
 		D04469CC2922888400D05694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CB2922888400D05694 /* AppDelegate.swift */; };
 		D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CD2922888400D05694 /* SceneDelegate.swift */; };
 		D04469D02922888400D05694 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CF2922888400D05694 /* MainViewController.swift */; };
@@ -20,6 +21,7 @@
 		D0446A09292290DE00D05694 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A08292290DE00D05694 /* Images.swift */; };
 		D0446A0B292291A600D05694 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0A292291A600D05694 /* Colors.swift */; };
 		D0446A0F2922A1DB00D05694 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0E2922A1DB00D05694 /* Restaurant.swift */; };
+		D0446A142922A88E00D05694 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A132922A88E00D05694 /* RestaurantCell.swift */; };
 		D0446A162922C25200D05694 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A152922C25100D05694 /* Fonts.swift */; };
 		D0446A182922C55E00D05694 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A172922C55E00D05694 /* Badge.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		D012D0082923FA78007F8F4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D024DB25292525200093CA5B /* RestaurantCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCellTest.swift; sourceTree = "<group>"; };
 		D04469C82922888400D05694 /* TheLittleFork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLittleFork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04469CB2922888400D05694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D04469CD2922888400D05694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		D0446A08292290DE00D05694 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D0446A0A292291A600D05694 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D0446A0E2922A1DB00D05694 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		D0446A132922A88E00D05694 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		D0446A152922C25100D05694 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		D0446A172922C55E00D05694 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D04469E22922889900D05694 /* BadgeTest.swift */,
+				D024DB25292525200093CA5B /* RestaurantCellTest.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 		D04469CA2922888400D05694 /* TheLittleFork */ = {
 			isa = PBXGroup;
 			children = (
+				D0446A102922A4F000D05694 /* Components */,
 				D04469FB29228B2400D05694 /* Commons */,
 				D0446A0329228E2600D05694 /* Utils */,
 				D0446A0229228DF000D05694 /* Extensions */,
@@ -179,6 +185,7 @@
 		D0446A102922A4F000D05694 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D0446A132922A88E00D05694 /* RestaurantCell.swift */,
 				D0446A172922C55E00D05694 /* Badge.swift */,
 			);
 			path = Components;
@@ -326,6 +333,7 @@
 				D04469CC2922888400D05694 /* AppDelegate.swift in Sources */,
 				D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */,
 				D0446A182922C55E00D05694 /* Badge.swift in Sources */,
+				D0446A142922A88E00D05694 /* RestaurantCell.swift in Sources */,
 				D0446A0F2922A1DB00D05694 /* Restaurant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D024DB26292525200093CA5B /* RestaurantCellTest.swift in Sources */,
 				D04469E32922889900D05694 /* BadgeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
