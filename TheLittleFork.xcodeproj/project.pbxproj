@@ -20,10 +20,15 @@
 		D0446A0529228E3D00D05694 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0429228E3D00D05694 /* ViewCodable.swift */; };
 		D0446A09292290DE00D05694 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A08292290DE00D05694 /* Images.swift */; };
 		D0446A0B292291A600D05694 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0A292291A600D05694 /* Colors.swift */; };
+		D0446A0D2922970400D05694 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0C2922970400D05694 /* MainViewPresenter.swift */; };
 		D0446A0F2922A1DB00D05694 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0E2922A1DB00D05694 /* Restaurant.swift */; };
+		D0446A122922A4FE00D05694 /* RestaurantTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A112922A4FE00D05694 /* RestaurantTable.swift */; };
 		D0446A142922A88E00D05694 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A132922A88E00D05694 /* RestaurantCell.swift */; };
 		D0446A162922C25200D05694 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A152922C25100D05694 /* Fonts.swift */; };
 		D0446A182922C55E00D05694 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A172922C55E00D05694 /* Badge.swift */; };
+		D0446A1B2922F40D00D05694 /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A1A2922F40D00D05694 /* RestaurantService.swift */; };
+		D0446A1D2922F45F00D05694 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A1C2922F45F00D05694 /* Routable.swift */; };
+		D0446A212922F73100D05694 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A202922F73100D05694 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +57,15 @@
 		D0446A0429228E3D00D05694 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
 		D0446A08292290DE00D05694 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D0446A0A292291A600D05694 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D0446A0C2922970400D05694 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 		D0446A0E2922A1DB00D05694 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		D0446A112922A4FE00D05694 /* RestaurantTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTable.swift; sourceTree = "<group>"; };
 		D0446A132922A88E00D05694 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		D0446A152922C25100D05694 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		D0446A172922C55E00D05694 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		D0446A1A2922F40D00D05694 /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
+		D0446A1C2922F45F00D05694 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		D0446A202922F73100D05694 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,16 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		D024DB23292524140093CA5B /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				D04469CF2922888400D05694 /* MainViewController.swift */,
+				D0446A0029228DB900D05694 /* MainView.swift */,
+				D0446A0C2922970400D05694 /* MainViewPresenter.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		D024DB24292524270093CA5B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +145,7 @@
 		D04469CA2922888400D05694 /* TheLittleFork */ = {
 			isa = PBXGroup;
 			children = (
+				D0446A192922F3E600D05694 /* Service */,
 				D0446A102922A4F000D05694 /* Components */,
 				D04469FB29228B2400D05694 /* Commons */,
 				D0446A0329228E2600D05694 /* Utils */,
@@ -158,8 +179,7 @@
 		D04469FC29228C4B00D05694 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D04469CF2922888400D05694 /* MainViewController.swift */,
-				D0446A0029228DB900D05694 /* MainView.swift */,
+				D024DB23292524140093CA5B /* MainView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,10 +205,29 @@
 		D0446A102922A4F000D05694 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				D0446A112922A4FE00D05694 /* RestaurantTable.swift */,
 				D0446A132922A88E00D05694 /* RestaurantCell.swift */,
 				D0446A172922C55E00D05694 /* Badge.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		D0446A192922F3E600D05694 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D0446A2229230DE300D05694 /* Network */,
+				D0446A1A2922F40D00D05694 /* RestaurantService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D0446A2229230DE300D05694 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D0446A202922F73100D05694 /* NetworkManager.swift */,
+				D0446A1C2922F45F00D05694 /* Routable.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,15 +365,20 @@
 			files = (
 				D0446A0529228E3D00D05694 /* ViewCodable.swift in Sources */,
 				D0446A09292290DE00D05694 /* Images.swift in Sources */,
+				D0446A0D2922970400D05694 /* MainViewPresenter.swift in Sources */,
 				D04469D02922888400D05694 /* MainViewController.swift in Sources */,
+				D0446A1D2922F45F00D05694 /* Routable.swift in Sources */,
 				D0446A162922C25200D05694 /* Fonts.swift in Sources */,
 				D0446A0B292291A600D05694 /* Colors.swift in Sources */,
 				D0446A0129228DB900D05694 /* MainView.swift in Sources */,
 				D04469CC2922888400D05694 /* AppDelegate.swift in Sources */,
+				D0446A212922F73100D05694 /* NetworkManager.swift in Sources */,
 				D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */,
 				D0446A182922C55E00D05694 /* Badge.swift in Sources */,
 				D0446A142922A88E00D05694 /* RestaurantCell.swift in Sources */,
 				D0446A0F2922A1DB00D05694 /* Restaurant.swift in Sources */,
+				D0446A122922A4FE00D05694 /* RestaurantTable.swift in Sources */,
+				D0446A1B2922F40D00D05694 /* RestaurantService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
