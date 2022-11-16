@@ -16,6 +16,9 @@
 		D04469FF29228D9700D05694 /* SketchKit in Frameworks */ = {isa = PBXBuildFile; productRef = D04469FE29228D9700D05694 /* SketchKit */; };
 		D0446A0129228DB900D05694 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0029228DB900D05694 /* MainView.swift */; };
 		D0446A0529228E3D00D05694 /* ViewCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0429228E3D00D05694 /* ViewCodable.swift */; };
+		D0446A09292290DE00D05694 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A08292290DE00D05694 /* Images.swift */; };
+		D0446A0B292291A600D05694 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0A292291A600D05694 /* Colors.swift */; };
+		D0446A162922C25200D05694 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A152922C25100D05694 /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		D04469E22922889900D05694 /* TheLittleForkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheLittleForkTests.swift; sourceTree = "<group>"; };
 		D0446A0029228DB900D05694 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D0446A0429228E3D00D05694 /* ViewCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodable.swift; sourceTree = "<group>"; };
+		D0446A08292290DE00D05694 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		D0446A0A292291A600D05694 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D0446A152922C25100D05694 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				D0446A0429228E3D00D05694 /* ViewCodable.swift */,
+				D0446A08292290DE00D05694 /* Images.swift */,
+				D0446A0A292291A600D05694 /* Colors.swift */,
+				D0446A152922C25100D05694 /* Fonts.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -264,7 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0446A0529228E3D00D05694 /* ViewCodable.swift in Sources */,
+				D0446A09292290DE00D05694 /* Images.swift in Sources */,
 				D04469D02922888400D05694 /* MainViewController.swift in Sources */,
+				D0446A162922C25200D05694 /* Fonts.swift in Sources */,
+				D0446A0B292291A600D05694 /* Colors.swift in Sources */,
 				D0446A0129228DB900D05694 /* MainView.swift in Sources */,
 				D04469CC2922888400D05694 /* AppDelegate.swift in Sources */,
 				D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */,
