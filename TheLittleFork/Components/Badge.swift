@@ -71,7 +71,7 @@ extension Badge: ViewCodable {
 
     func setupConstraints() {
         layout.applyConstraint { view in
-            view.widthAnchor(greaterThanOrEqualToConstant: type == .offer ? 64 : 50)
+            view.widthAnchor(equalToConstant: type == .offer ? 64 : 50)
         }
 
         iconView.layout.applyConstraint { view in
