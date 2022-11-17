@@ -11,7 +11,7 @@ protocol MainViewPresenterProtocol {
     var restaurantsCount: Int { get }
 
     func fetchRestaurants() async throws -> [Restaurant]
-    func getImageBy(uuid: String) async throws -> UIImage?
+    func getImageBy(uuid: String) async throws -> UIImage
     func getRestaurantBy(index: Int) -> Restaurant?
 }
 
@@ -38,19 +38,14 @@ extension MainViewPresenter: MainViewPresenterProtocol {
         return restaurants
     }
 
-    func getImageBy(uuid: String) async throws -> UIImage? {
+    func getImageBy(uuid: String) async throws -> UIImage {
         guard let restaurant = restaurants.first(where: { $0.uuid == uuid }),
-              let photoURL = restaurant.photo?.url,
-              let url = URL(string: photoURL) else {
-            return nil
+              let photo = restaurant.photo else {
+            throw RestaurantServiceError.noImage
         }
 
-        if #available(iOS 15.0, *) {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            return UIImage(data: data)
-        } else {
-            return nil
-        }
+        let image = try await service.fetchRestaurantImage(photo: photo)
+        return image
     }
 
     func getRestaurantBy(index: Int) -> Restaurant? {

@@ -5,10 +5,15 @@
 //  Created by nicolas.e.manograsso on 14/11/2022.
 //
 
-import Foundation
+import UIKit
 
 protocol RestaurantServiceProtocol {
     func fetchAll() async throws -> RestaurantResponse
+    func fetchRestaurantImage(photo: RestaurantPhoto) async throws -> UIImage
+}
+
+enum RestaurantServiceError: Error {
+    case noImage
 }
 
 struct RestaurantService: RestaurantServiceProtocol {
@@ -51,6 +56,41 @@ struct RestaurantService: RestaurantServiceProtocol {
                     continuation.resume(with: result)
                 }
             }
+        }
+    }
+
+    func fetchRestaurantImage(photo: RestaurantPhoto) async throws -> UIImage {
+        guard let photoURL = photo.url,
+            let url = URL(string: photoURL) else {
+            throw NetworkManager.NetworkManagerError.invalidURL
+        }
+
+        if #available(iOS 15.0, *) {
+            let (data, _) = try await URLSession.shared.data(from: url)
+
+            guard let image = UIImage(data: data) else {
+                throw RestaurantServiceError.noImage
+            }
+
+            return image
+        } else {
+            return try await withCheckedThrowingContinuation { continuation in
+                URLSession.shared.dataTask(with: url) { (data, _, error) in
+                    if let error {
+                        continuation.resume(throwing: error)
+                        return
+                    }
+
+                    guard let data,
+                          let image = UIImage(data: data) else {
+                        continuation.resume(throwing: RestaurantServiceError.noImage)
+                        return
+                    }
+
+                    continuation.resume(returning: image)
+                }.resume()
+            }
+
         }
     }
 }
