@@ -33,6 +33,12 @@ struct Restaurant: Codable {
     }
 }
 
+extension Restaurant: Equatable {
+    static func == (lhs: Restaurant, rhs: Restaurant) -> Bool {
+        lhs.uuid == rhs.uuid
+    }
+}
+
 struct Address: Codable {
     let street: String
     let postalCode: String

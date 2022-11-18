@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D024DB212924366B0093CA5B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = D024DB202924366B0093CA5B /* SnapshotTesting */; };
 		D024DB26292525200093CA5B /* RestaurantCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB25292525200093CA5B /* RestaurantCellTest.swift */; };
+		D024DB2C2926BDE50093CA5B /* MainViewPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */; };
+		D024DB2F2926C4910093CA5B /* RestaurantServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB2E2926C4910093CA5B /* RestaurantServiceMock.swift */; };
 		D04469CC2922888400D05694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CB2922888400D05694 /* AppDelegate.swift */; };
 		D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CD2922888400D05694 /* SceneDelegate.swift */; };
 		D04469D02922888400D05694 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CF2922888400D05694 /* MainViewController.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		D012D0082923FA78007F8F4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D024DB25292525200093CA5B /* RestaurantCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCellTest.swift; sourceTree = "<group>"; };
+		D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenterTest.swift; sourceTree = "<group>"; };
+		D024DB2E2926C4910093CA5B /* RestaurantServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantServiceMock.swift; sourceTree = "<group>"; };
 		D04469C82922888400D05694 /* TheLittleFork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLittleFork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04469CB2922888400D05694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D04469CD2922888400D05694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D024DB292926BD310093CA5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D024DB2A2926BD4A0093CA5B /* MainView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D024DB2A2926BD4A0093CA5B /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		D024DB2D2926C47E0093CA5B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D024DB2E2926C4910093CA5B /* RestaurantServiceMock.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		D04469BF2922888400D05694 = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +187,9 @@
 		D04469E12922889900D05694 /* TheLittleForkTests */ = {
 			isa = PBXGroup;
 			children = (
+				D024DB2D2926C47E0093CA5B /* Service */,
 				D024DB222924368A0093CA5B /* Components */,
+				D024DB292926BD310093CA5B /* Views */,
 			);
 			path = TheLittleForkTests;
 			sourceTree = "<group>";
@@ -386,7 +416,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D024DB2C2926BDE50093CA5B /* MainViewPresenterTest.swift in Sources */,
 				D024DB26292525200093CA5B /* RestaurantCellTest.swift in Sources */,
+				D024DB2F2926C4910093CA5B /* RestaurantServiceMock.swift in Sources */,
 				D04469E32922889900D05694 /* BadgeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

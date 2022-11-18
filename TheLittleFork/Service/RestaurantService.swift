@@ -59,6 +59,7 @@ struct RestaurantService: RestaurantServiceProtocol {
         }
     }
 
+    // This method could be refactored and moved to a new service or util to download image in a generic way
     func fetchRestaurantImage(photo: RestaurantPhoto) async throws -> UIImage {
         guard let photoURL = photo.url,
             let url = URL(string: photoURL) else {
