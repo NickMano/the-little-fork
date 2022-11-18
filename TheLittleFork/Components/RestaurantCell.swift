@@ -67,8 +67,7 @@ final class RestaurantCell: UITableViewCell {
     }()
 
     private lazy var likeButton: LikeButton = {
-        let button = LikeButton(hasLiked: false)
-        return button
+        return LikeButton(hasLiked: false)
     }()
 
     // MARK: - Initializers

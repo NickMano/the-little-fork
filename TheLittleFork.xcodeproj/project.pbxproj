@@ -13,6 +13,7 @@
 		D024DB2F2926C4910093CA5B /* RestaurantServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB2E2926C4910093CA5B /* RestaurantServiceMock.swift */; };
 		D024DB312927E74E0093CA5B /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB302927E74D0093CA5B /* LikeButton.swift */; };
 		D024DB332927E93C0093CA5B /* LikeButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB322927E93C0093CA5B /* LikeButtonTest.swift */; };
+		D024DB3529283DAA0093CA5B /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB3429283DAA0093CA5B /* UITableViewCell+Extension.swift */; };
 		D04469CC2922888400D05694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CB2922888400D05694 /* AppDelegate.swift */; };
 		D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CD2922888400D05694 /* SceneDelegate.swift */; };
 		D04469D02922888400D05694 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CF2922888400D05694 /* MainViewController.swift */; };
@@ -51,6 +52,7 @@
 		D024DB2E2926C4910093CA5B /* RestaurantServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantServiceMock.swift; sourceTree = "<group>"; };
 		D024DB302927E74D0093CA5B /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		D024DB322927E93C0093CA5B /* LikeButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonTest.swift; sourceTree = "<group>"; };
+		D024DB3429283DAA0093CA5B /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		D04469C82922888400D05694 /* TheLittleFork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLittleFork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04469CB2922888400D05694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D04469CD2922888400D05694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 		D0446A0229228DF000D05694 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D024DB3429283DAA0093CA5B /* UITableViewCell+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				D0446A212922F73100D05694 /* NetworkManager.swift in Sources */,
 				D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */,
 				D0446A182922C55E00D05694 /* Badge.swift in Sources */,
+				D024DB3529283DAA0093CA5B /* UITableViewCell+Extension.swift in Sources */,
 				D0446A142922A88E00D05694 /* RestaurantCell.swift in Sources */,
 				D0446A0F2922A1DB00D05694 /* Restaurant.swift in Sources */,
 				D0446A1B2922F40D00D05694 /* RestaurantService.swift in Sources */,

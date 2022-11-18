@@ -9,26 +9,29 @@ import UIKit
 import SketchKit
 
 protocol MainViewProtocol where Self: UIView {
-    var table: RestaurantTable { get }
-    func onRestaurantsLoaded(_ restaurants: [Restaurant])
-    func onError()
-}
-
-protocol MainViewDelegate: AnyObject {
-
+    var presenter: MainViewPresenterProtocol { get set }
+    func onViewDidLoad()
 }
 
 final class MainView: UIView {
     // MARK: - Properties
-    lazy var table: RestaurantTable = {
-        let table = RestaurantTable()
+    private lazy var table: UITableView = {
+        let table = UITableView()
         table.backgroundColor = .clear
         table.separatorStyle = .none
         table.showsVerticalScrollIndicator = false
-        table.register(RestaurantCell.self, forCellReuseIdentifier: "cell")
+        table.delegate = self
+        table.dataSource = self
+
+        table.rowHeight = 220
+
+        let identifier = RestaurantCell.identifier
+        table.register(RestaurantCell.self, forCellReuseIdentifier: identifier)
 
         return table
     }()
+
+    var presenter: MainViewPresenterProtocol = MainViewPresenter()
 
     // MARK: - Initializers
     override init(frame: CGRect) {
@@ -42,14 +45,46 @@ final class MainView: UIView {
     }
 }
 
+// MARK: - MainViewProtocol
 extension MainView: MainViewProtocol {
+    func onViewDidLoad() {
+        Task.init {
+            do {
+                let restaurants = try await presenter.fetchRestaurants()
+                onRestaurantsLoaded(restaurants)
+            } catch {
+                onError()
+            }
+        }
+    }
+}
+
+// MARK: - Private methods
+private extension MainView {
     func onRestaurantsLoaded(_ restaurants: [Restaurant]) {
-        table.updateRestaurants(restaurants)
+        table.reloadData()
     }
 
-    func onError() {
+    func getRestaurant(for index: Int) -> Restaurant? {
+        guard let restaurant = presenter.getRestaurantBy(index: index) else {
+            return nil
+        }
 
+        return restaurant
     }
+
+    func getImageById(_ uuid: String, completion: @escaping (UIImage?) -> Void) {
+        Task.init {
+            do {
+                let image = try await presenter.getImageBy(uuid: uuid)
+                completion(image)
+            } catch {
+                completion(nil)
+            }
+        }
+    }
+
+    func onError() {}
 }
 
 // MARK: - ViewCodable
@@ -71,7 +106,30 @@ extension MainView: ViewCodable {
         backgroundColor = .principal
     }
 
-    func setupTouchEvents() {
+    func setupTouchEvents() {}
+}
 
+// MARK: - UITableViewDelegate & UITableViewDataSource
+extension MainView: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        presenter.restaurantsCount
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let identifier = RestaurantCell.identifier
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+
+        guard let restaurantCell = cell as? RestaurantCell,
+              let info = getRestaurant(for: indexPath.row)
+        else { return cell }
+
+        restaurantCell.selectionStyle = .none
+        restaurantCell.setRestaurant(info)
+
+        getImageById(info.uuid) { image in
+            restaurantCell.setImage(image)
+        }
+
+        return restaurantCell
     }
 }
