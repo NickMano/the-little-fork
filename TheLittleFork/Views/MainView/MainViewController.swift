@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     // MARK: - Properties
     private let mainView: MainViewProtocol
     private let presenter: MainViewPresenterProtocol

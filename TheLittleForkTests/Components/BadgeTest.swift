@@ -9,7 +9,7 @@ import XCTest
 import SnapshotTesting
 @testable import TheLittleFork
 
-class BadgeTest: XCTestCase {
+final class BadgeTest: XCTestCase {
 
     func testEmptyRatingBadge() throws {
         let badge = Badge(.rating)

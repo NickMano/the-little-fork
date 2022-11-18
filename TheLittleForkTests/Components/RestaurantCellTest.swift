@@ -10,7 +10,7 @@ import SnapshotTesting
 import SketchKit
 @testable import TheLittleFork
 
-class RestaurantCellTest: XCTestCase {
+final class RestaurantCellTest: XCTestCase {
     private let defaultImage = UIImage(named: "testCellBackground")
     private var sut: RestaurantCell!
 
