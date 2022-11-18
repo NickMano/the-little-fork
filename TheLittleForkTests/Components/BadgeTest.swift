@@ -10,7 +10,6 @@ import SnapshotTesting
 @testable import TheLittleFork
 
 final class BadgeTest: XCTestCase {
-
     func testEmptyRatingBadge() throws {
         let badge = Badge(.rating)
         let viewController = UIViewController()

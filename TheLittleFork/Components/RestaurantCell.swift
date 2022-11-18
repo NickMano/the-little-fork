@@ -66,6 +66,11 @@ final class RestaurantCell: UITableViewCell {
         return stack
     }()
 
+    private lazy var likeButton: LikeButton = {
+        let button = LikeButton(hasLiked: false)
+        return button
+    }()
+
     // MARK: - Initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -114,8 +119,8 @@ private extension RestaurantCell {
 // MARK: - ViewCodable
 extension RestaurantCell: ViewCodable {
     func buildViewHierarchy() {
-        addSubviews([backgroundImage])
-        backgroundImage.addSubviews([blurView, hStack, address])
+        contentView.addSubviews([backgroundImage, likeButton])
+        backgroundImage.addSubviews([ blurView, hStack, address])
 
         [name, ratingBadge, offerBadge].forEach { hStack.addArrangedSubview($0) }
     }
@@ -127,6 +132,11 @@ extension RestaurantCell: ViewCodable {
             view.bottomAnchor(equalTo: bottomAnchor, constant: -20)
             view.leftAnchor(equalTo: leftAnchor)
             view.rightAnchor(equalTo: rightAnchor)
+        }
+
+        likeButton.layout.applyConstraint { view in
+            view.rightAnchor(equalTo: rightAnchor, constant: -6)
+            view.topAnchor(equalTo: backgroundImage.topAnchor, constant: 6)
         }
 
         blurView.layout.applyConstraint { view in

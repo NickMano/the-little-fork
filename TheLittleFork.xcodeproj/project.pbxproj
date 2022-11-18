@@ -11,6 +11,8 @@
 		D024DB26292525200093CA5B /* RestaurantCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB25292525200093CA5B /* RestaurantCellTest.swift */; };
 		D024DB2C2926BDE50093CA5B /* MainViewPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */; };
 		D024DB2F2926C4910093CA5B /* RestaurantServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB2E2926C4910093CA5B /* RestaurantServiceMock.swift */; };
+		D024DB312927E74E0093CA5B /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB302927E74D0093CA5B /* LikeButton.swift */; };
+		D024DB332927E93C0093CA5B /* LikeButtonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB322927E93C0093CA5B /* LikeButtonTest.swift */; };
 		D04469CC2922888400D05694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CB2922888400D05694 /* AppDelegate.swift */; };
 		D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CD2922888400D05694 /* SceneDelegate.swift */; };
 		D04469D02922888400D05694 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04469CF2922888400D05694 /* MainViewController.swift */; };
@@ -24,7 +26,6 @@
 		D0446A0B292291A600D05694 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0A292291A600D05694 /* Colors.swift */; };
 		D0446A0D2922970400D05694 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0C2922970400D05694 /* MainViewPresenter.swift */; };
 		D0446A0F2922A1DB00D05694 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A0E2922A1DB00D05694 /* Restaurant.swift */; };
-		D0446A122922A4FE00D05694 /* RestaurantTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A112922A4FE00D05694 /* RestaurantTable.swift */; };
 		D0446A142922A88E00D05694 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A132922A88E00D05694 /* RestaurantCell.swift */; };
 		D0446A162922C25200D05694 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A152922C25100D05694 /* Fonts.swift */; };
 		D0446A182922C55E00D05694 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0446A172922C55E00D05694 /* Badge.swift */; };
@@ -48,6 +49,8 @@
 		D024DB25292525200093CA5B /* RestaurantCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCellTest.swift; sourceTree = "<group>"; };
 		D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenterTest.swift; sourceTree = "<group>"; };
 		D024DB2E2926C4910093CA5B /* RestaurantServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantServiceMock.swift; sourceTree = "<group>"; };
+		D024DB302927E74D0093CA5B /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		D024DB322927E93C0093CA5B /* LikeButtonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButtonTest.swift; sourceTree = "<group>"; };
 		D04469C82922888400D05694 /* TheLittleFork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheLittleFork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04469CB2922888400D05694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D04469CD2922888400D05694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +66,6 @@
 		D0446A0A292291A600D05694 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D0446A0C2922970400D05694 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 		D0446A0E2922A1DB00D05694 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
-		D0446A112922A4FE00D05694 /* RestaurantTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTable.swift; sourceTree = "<group>"; };
 		D0446A132922A88E00D05694 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		D0446A152922C25100D05694 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		D0446A172922C55E00D05694 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				D04469E22922889900D05694 /* BadgeTest.swift */,
 				D024DB25292525200093CA5B /* RestaurantCellTest.swift */,
+				D024DB322927E93C0093CA5B /* LikeButtonTest.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -235,9 +238,9 @@
 		D0446A102922A4F000D05694 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				D0446A112922A4FE00D05694 /* RestaurantTable.swift */,
 				D0446A132922A88E00D05694 /* RestaurantCell.swift */,
 				D0446A172922C55E00D05694 /* Badge.swift */,
+				D024DB302927E74D0093CA5B /* LikeButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				D0446A0529228E3D00D05694 /* ViewCodable.swift in Sources */,
 				D0446A09292290DE00D05694 /* Images.swift in Sources */,
 				D0446A0D2922970400D05694 /* MainViewPresenter.swift in Sources */,
+				D024DB312927E74E0093CA5B /* LikeButton.swift in Sources */,
 				D04469D02922888400D05694 /* MainViewController.swift in Sources */,
 				D0446A1D2922F45F00D05694 /* Routable.swift in Sources */,
 				D0446A162922C25200D05694 /* Fonts.swift in Sources */,
@@ -407,7 +411,6 @@
 				D0446A182922C55E00D05694 /* Badge.swift in Sources */,
 				D0446A142922A88E00D05694 /* RestaurantCell.swift in Sources */,
 				D0446A0F2922A1DB00D05694 /* Restaurant.swift in Sources */,
-				D0446A122922A4FE00D05694 /* RestaurantTable.swift in Sources */,
 				D0446A1B2922F40D00D05694 /* RestaurantService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +422,7 @@
 				D024DB2C2926BDE50093CA5B /* MainViewPresenterTest.swift in Sources */,
 				D024DB26292525200093CA5B /* RestaurantCellTest.swift in Sources */,
 				D024DB2F2926C4910093CA5B /* RestaurantServiceMock.swift in Sources */,
+				D024DB332927E93C0093CA5B /* LikeButtonTest.swift in Sources */,
 				D04469E32922889900D05694 /* BadgeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

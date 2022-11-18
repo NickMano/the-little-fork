@@ -12,9 +12,9 @@ extension UIImage {
     static let bubblesHalf = UIImage(named: "bubblesHalf") ?? UIImage()
     static let bubblesFull = UIImage(named: "bubblesFull") ?? UIImage()
 
-    static let heartEmpty = UIImage(named: "heartEmpty") ?? UIImage()
-    static let heartFull = UIImage(named: "heartFull") ?? UIImage()
-    static let heartSolid = UIImage(named: "heartSolid") ?? UIImage()
+    static let heartEmpty = UIImage(named: "emptyHeart") ?? UIImage()
+    static let heartFull = UIImage(named: "filledHeart") ?? UIImage()
+    static let heartSolid = UIImage(named: "solidHeart") ?? UIImage()
 
     static let cash = UIImage(named: "cash") ?? UIImage()
     static let food = UIImage(named: "food") ?? UIImage()
