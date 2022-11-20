@@ -51,6 +51,20 @@ final class MainView: UIView {
 
     }
 
+    init(withError: Bool = false) {
+        super.init(frame: .zero)
+        setupView()
+        onError()
+    }
+
+    init(restaurants: [Restaurant] = [], presenter: MainViewPresenterProtocol) {
+        self.presenter = presenter
+
+        super.init(frame: .zero)
+        setupView()
+        onRestaurantsLoaded(restaurants)
+    }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

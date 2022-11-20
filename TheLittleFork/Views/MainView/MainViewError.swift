@@ -13,6 +13,7 @@ final class MainViewError: UIView {
     private lazy var message: UILabel = {
        let label = UILabel()
         label.text = "🔌 Uppps..."
+        label.font = .restaurantName
         label.textAlignment = .center
 
         return label
@@ -21,6 +22,9 @@ final class MainViewError: UIView {
     private lazy var retryButton: UIButton = {
        let button = UIButton()
         button.setTitle("Retry", for: .normal)
+        button.titleLabel?.font = .description
+        button.backgroundColor = .accent
+        button.layer.cornerRadius = 8
 
         return button
     }()
@@ -53,7 +57,7 @@ extension MainViewError: ViewCodable {
 
         retryButton.layout.applyConstraint { button in
             button.centerXAnchor(equalTo: centerXAnchor)
-            button.topAnchor(equalTo: message.bottomAnchor, constant: 12)
+            button.topAnchor(equalTo: message.bottomAnchor, constant: 24)
 
             button.widthAnchor(equalToConstant: 80)
             button.heightAnchor(equalToConstant: 32)
