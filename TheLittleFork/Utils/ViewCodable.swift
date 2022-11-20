@@ -7,6 +7,12 @@
 
 import UIKit
 
+enum ViewState {
+    case loading
+    case error
+    case success
+}
+
 protocol ViewCodable {
     /// Method to add the views to the view hierarchy
     func buildViewHierarchy()

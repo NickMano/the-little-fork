@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00786BC292ABD1D005DD2F4 /* MainViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00786BB292ABD1D005DD2F4 /* MainViewError.swift */; };
 		D024DB212924366B0093CA5B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = D024DB202924366B0093CA5B /* SnapshotTesting */; };
 		D024DB26292525200093CA5B /* RestaurantCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB25292525200093CA5B /* RestaurantCellTest.swift */; };
 		D024DB2C2926BDE50093CA5B /* MainViewPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D00786BB292ABD1D005DD2F4 /* MainViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewError.swift; sourceTree = "<group>"; };
 		D012D0082923FA78007F8F4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D024DB25292525200093CA5B /* RestaurantCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCellTest.swift; sourceTree = "<group>"; };
 		D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenterTest.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				D04469CF2922888400D05694 /* MainViewController.swift */,
 				D0446A0029228DB900D05694 /* MainView.swift */,
 				D0446A0C2922970400D05694 /* MainViewPresenter.swift */,
+				D00786BB292ABD1D005DD2F4 /* MainViewError.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				D0446A0B292291A600D05694 /* Colors.swift in Sources */,
 				D0446A0129228DB900D05694 /* MainView.swift in Sources */,
 				D04469CC2922888400D05694 /* AppDelegate.swift in Sources */,
+				D00786BC292ABD1D005DD2F4 /* MainViewError.swift in Sources */,
 				D0446A212922F73100D05694 /* NetworkManager.swift in Sources */,
 				D04469CE2922888400D05694 /* SceneDelegate.swift in Sources */,
 				D0446A182922C55E00D05694 /* Badge.swift in Sources */,

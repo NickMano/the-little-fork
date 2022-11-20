@@ -31,6 +31,17 @@ final class MainView: UIView {
         return table
     }()
 
+    private lazy var activityIndicator: UIActivityIndicatorView = {
+        let loading = UIActivityIndicatorView(style: .large)
+        loading.startAnimating()
+
+        return loading
+    }()
+
+    private lazy var errorView: MainViewError = {
+        return MainViewError()
+    }()
+
     var presenter: MainViewPresenterProtocol = MainViewPresenter()
 
     // MARK: - Initializers
@@ -62,7 +73,27 @@ extension MainView: MainViewProtocol {
 // MARK: - Private methods
 private extension MainView {
     func onRestaurantsLoaded(_ restaurants: [Restaurant]) {
+        setupSuccessView()
         table.reloadData()
+    }
+
+    func setupSuccessView() {
+        setupViewHierarchyTo(.success)
+        setupRestaurantConstraints()
+    }
+
+    func setupViewHierarchyTo(_ state: ViewState) {
+        subviews.forEach { $0.removeFromSuperview() }
+
+        switch state {
+        case .loading:
+            addSubview(activityIndicator)
+        case .error:
+            addSubview(errorView)
+        case .success:
+            addSubview(table)
+        }
+
     }
 
     func getRestaurant(for index: Int) -> Restaurant? {
@@ -84,16 +115,18 @@ private extension MainView {
         }
     }
 
-    func onError() {}
-}
-
-// MARK: - ViewCodable
-extension MainView: ViewCodable {
-    func buildViewHierarchy() {
-        addSubviews([table])
+    func onError() {
+        setupViewHierarchyTo(.error)
+        setupErrorViewConstraints()
     }
 
-    func setupConstraints() {
+    func setupLoading() {
+        setupViewHierarchyTo(.loading)
+        setupLoadingConstraints()
+        activityIndicator.startAnimating()
+    }
+
+    func setupRestaurantConstraints() {
         table.layout.applyConstraint { table in
             table.topAnchor(equalTo: safeTopAnchor, constant: 10)
             table.leftAnchor(equalTo: leftAnchor, constant: 12)
@@ -102,11 +135,43 @@ extension MainView: ViewCodable {
         }
     }
 
+    func setupLoadingConstraints() {
+        activityIndicator.layout.applyConstraint { indicator in
+            indicator.centerYAnchor(equalTo: centerYAnchor)
+            indicator.centerXAnchor(equalTo: centerXAnchor)
+        }
+    }
+
+    func setupErrorViewConstraints() {
+        errorView.layout.applyConstraint { view in
+            view.topAnchor(equalTo: safeTopAnchor)
+            view.leftAnchor(equalTo: leftAnchor)
+            view.rightAnchor(equalTo: rightAnchor)
+            view.bottomAnchor(equalTo: safeBottomAnchor)
+        }
+    }
+}
+
+// MARK: - ViewCodable
+extension MainView: ViewCodable {
+    func buildViewHierarchy() {
+        addSubview(activityIndicator)
+    }
+
+    func setupConstraints() {
+        setupLoadingConstraints()
+    }
+
     func configureView() {
         backgroundColor = .principal
     }
 
-    func setupTouchEvents() {}
+    func setupTouchEvents() {
+        errorView.onRetry = {
+            self.setupLoading()
+            self.onViewDidLoad()
+        }
+    }
 }
 
 // MARK: - UITableViewDelegate & UITableViewDataSource
