@@ -10,6 +10,9 @@ import UIKit
 protocol RestaurantServiceProtocol {
     func fetchAll() async throws -> RestaurantResponse
     func fetchRestaurantImage(photo: RestaurantPhoto) async throws -> UIImage
+    func getFavorites() -> [String]
+    func saveFavorite(_ uuid: String)
+    func removeFavorite(_ uuid: String)
 }
 
 enum RestaurantServiceError: Error {
@@ -20,6 +23,13 @@ struct RestaurantService: RestaurantServiceProtocol {
     // MARK: - Static properties
     static let baseURL = "https://alanflament.github.io"
     static let manager = NetworkManager(baseURL: baseURL)
+
+    private let userDefaults: UserDefaults
+
+    // This logic can be removed when the the favorites
+    init(userDefaults: UserDefaults = .standard) {
+        self.userDefaults = userDefaults
+    }
 
     // MARK: - Endpoints
     enum Endpoint: Routable {
@@ -93,5 +103,31 @@ struct RestaurantService: RestaurantServiceProtocol {
             }
 
         }
+    }
+
+    func getFavorites() -> [String] {
+        guard let uuids = userDefaults.object(forKey: "savedRestaurants") as? [String] else {
+            return []
+        }
+
+        return uuids
+    }
+
+    func saveFavorite(_ newUuid: String) {
+        var uuids = getFavorites()
+        uuids.append(newUuid)
+
+        userDefaults.set(uuids, forKey: "savedRestaurants")
+    }
+
+    func removeFavorite(_ uuid: String) {
+        var uuids = getFavorites()
+        guard let indexOfItemToRemove = uuids.firstIndex(of: uuid) else {
+            return
+        }
+
+        uuids.remove(at: indexOfItemToRemove)
+
+        userDefaults.set(uuids, forKey: "savedRestaurants")
     }
 }

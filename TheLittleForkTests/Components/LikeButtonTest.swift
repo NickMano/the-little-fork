@@ -21,4 +21,18 @@ final class LikeButtonTest: XCTestCase {
 
         assertSnapshot(matching: sut, as: .image)
     }
+
+    func testSetIsFavorite() {
+        let sut = LikeButton(hasLiked: false)
+
+        sut.setIsFavorite(true)
+        assertSnapshot(matching: sut, as: .image)
+    }
+
+    func testSetIsNotFavorite() {
+        let sut = LikeButton(hasLiked: false)
+
+        sut.setIsFavorite(false)
+        assertSnapshot(matching: sut, as: .image)
+    }
 }

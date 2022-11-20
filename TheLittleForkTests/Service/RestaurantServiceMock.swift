@@ -9,14 +9,18 @@ import UIKit
 @testable import TheLittleFork
 
 final class RestaurantServiceMock: RestaurantServiceProtocol {
+    // MARK: - Properties
     private let withError: Bool
     private let withPhoto: Bool
+    private(set) var uuids: [String] = ["1", "2", "3"]
 
+    // MARK: - Initializers
     init(withError: Bool = false, withPhoto: Bool = true) {
         self.withError = withError
         self.withPhoto = withPhoto
     }
 
+    // MARK: - Public methods
     func fetchAll() async throws -> RestaurantResponse {
         if withError {
             throw NetworkManager.NetworkManagerError.invalidURL
@@ -66,4 +70,25 @@ final class RestaurantServiceMock: RestaurantServiceProtocol {
         return image
     }
 
+    func getFavorites() -> [String] {
+        var uuids: [String] = []
+
+        for num in 1...3 {
+            uuids.append("uuid\(num)")
+        }
+
+        return uuids
+    }
+
+    func saveFavorite(_ uuid: String) {
+        uuids.append(uuid)
+    }
+
+    func removeFavorite(_ uuid: String) {
+        guard let indexOfItemToRemove = uuids.firstIndex(of: uuid) else {
+            return
+        }
+
+        uuids.remove(at: indexOfItemToRemove)
+    }
 }

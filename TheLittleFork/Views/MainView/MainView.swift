@@ -124,12 +124,24 @@ extension MainView: UITableViewDelegate, UITableViewDataSource {
         else { return cell }
 
         restaurantCell.selectionStyle = .none
+        restaurantCell.delegate = self
         restaurantCell.setRestaurant(info)
 
         getImageById(info.uuid) { image in
             restaurantCell.setImage(image)
         }
 
+        if presenter.isFavoriteRestaurantBy(uuid: info.uuid) {
+            restaurantCell.setIsFavorite(true)
+        }
+
         return restaurantCell
+    }
+}
+
+// MARK: - RestaurantCellDelegate
+extension MainView: RestaurantCellDelegate {
+    func onLikeButtonTaped(_ uuid: String, hasLiked: Bool) {
+        presenter.onFavoriteValueChange(uuid: uuid, isFavorite: hasLiked)
     }
 }
