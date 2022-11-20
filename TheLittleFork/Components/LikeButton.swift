@@ -8,8 +8,24 @@
 import UIKit
 import SketchKit
 
+protocol LikeButtonDelegate: AnyObject {
+    func onLikeButtonTaped(_ hasLiked: Bool)
+}
+
 final class LikeButton: UIView {
-    private(set) var hasLiked: Bool
+    // MARK: - Properties
+    private var hasLiked: Bool {
+        didSet {
+            guard hasLiked != oldValue else {
+                return
+            }
+
+            likeButton.setImage(likeImage, for: .normal)
+        }
+    }
+
+    weak var delegate: LikeButtonDelegate?
+
     private var likeImage: UIImage {
         hasLiked ? UIImage.heartFull : UIImage.heartEmpty
     }
@@ -67,9 +83,17 @@ extension LikeButton: ViewCodable {
     }
 }
 
+// MARK: - Public methods
 extension LikeButton {
+    func setIsFavorite(_ value: Bool) {
+        hasLiked = value
+    }
+}
+
+// MARK: - Private methods
+private extension LikeButton {
     @objc func onTaped() {
         hasLiked.toggle()
-        likeButton.setImage(likeImage, for: .normal)
+        delegate?.onLikeButtonTaped(hasLiked)
     }
 }

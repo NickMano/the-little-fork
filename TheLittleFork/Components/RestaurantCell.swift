@@ -7,13 +7,19 @@
 
 import UIKit
 
+protocol RestaurantCellDelegate: AnyObject {
+    func onLikeButtonTaped(_ uuid: String, hasLiked: Bool)
+}
+
 final class RestaurantCell: UITableViewCell {
     // MARK: - Properties
+    private let tripLogo = UIImage.tripLogo.withRenderingMode(.alwaysTemplate)
+    private var uuid: String = ""
+
     private lazy var backgroundImage: UIImageView = {
         let view = UIImageView()
-        let image = UIImage.tripLogo.withRenderingMode(.alwaysTemplate)
 
-        view.image = image
+        view.image = tripLogo
         view.backgroundColor = .secondary
         view.contentMode = .center
         view.tintColor = .accent
@@ -67,8 +73,13 @@ final class RestaurantCell: UITableViewCell {
     }()
 
     private lazy var likeButton: LikeButton = {
-        return LikeButton(hasLiked: false)
+        let button = LikeButton(hasLiked: false)
+        button.delegate = self
+
+        return button
     }()
+
+    weak var delegate: RestaurantCellDelegate?
 
     // MARK: - Initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -79,13 +90,27 @@ final class RestaurantCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    // MARK: - Lifecycle methods
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        backgroundImage.image = tripLogo
+        backgroundImage.contentMode = .center
+        name.text = ""
+        address.text = ""
+        ratingBadge.setText("")
+        likeButton.setIsFavorite(false)
+
+    }
 }
 
 // MARK: - Public methods
 extension RestaurantCell {
     func setRestaurant(_ restaurant: Restaurant) {
-        name.text = restaurant.name
+        uuid = restaurant.uuid
 
+        name.text = restaurant.name
         address.text = "\(restaurant.address.street) - \(restaurant.address.locality)"
 
         let rating = restaurant.aggregateRatings.theFork
@@ -105,6 +130,10 @@ extension RestaurantCell {
             backgroundImage.contentMode = .scaleAspectFill
             backgroundImage.image = image
         }
+    }
+
+    func setIsFavorite(_ value: Bool) {
+        likeButton.setIsFavorite(value)
     }
 }
 
@@ -163,4 +192,11 @@ extension RestaurantCell: ViewCodable {
     }
 
     func setupTouchEvents() { }
+}
+
+// MARK: - LikeButtonDelegate
+extension RestaurantCell: LikeButtonDelegate {
+    func onLikeButtonTaped(_ hasLiked: Bool) {
+        delegate?.onLikeButtonTaped(uuid, hasLiked: hasLiked)
+    }
 }
