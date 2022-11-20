@@ -36,7 +36,7 @@ final class RestaurantServiceMock: RestaurantServiceProtocol {
 
         let firstRestaurant = Restaurant(
             name: "name",
-            uuid: "firstRestaurant",
+            uuid: "1",
             priceRange: 25,
             address: address,
             servesCuisine: "Indian",
@@ -71,12 +71,6 @@ final class RestaurantServiceMock: RestaurantServiceProtocol {
     }
 
     func getFavorites() -> [String] {
-        var uuids: [String] = []
-
-        for num in 1...3 {
-            uuids.append("uuid\(num)")
-        }
-
         return uuids
     }
 

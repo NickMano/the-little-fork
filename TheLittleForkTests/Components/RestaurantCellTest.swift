@@ -66,6 +66,20 @@ final class RestaurantCellTest: XCTestCase {
 
         assertSnapshot(matching: sut, as: .image)
     }
+
+    func testSetIsFavorite() {
+        sut.setRestaurant(getRestaurant())
+        sut.setIsFavorite(true)
+
+        assertSnapshot(matching: sut, as: .image)
+    }
+
+    func testSetIsNotFavorite() {
+        sut.setRestaurant(getRestaurant())
+        sut.setIsFavorite(false)
+
+        assertSnapshot(matching: sut, as: .image)
+    }
 }
 
 // MARK: - Private methods

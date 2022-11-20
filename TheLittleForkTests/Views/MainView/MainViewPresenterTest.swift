@@ -116,4 +116,51 @@ final class MainViewPresenterTest: XCTestCase {
 
         XCTAssertNil(restaunrant)
     }
+
+    // MARK: - isFavoriteRestaurantBy
+    func testIsFavoriteRestaurantByUuid() async throws {
+        let service = RestaurantServiceMock()
+        let uuid = service.uuids.first ?? "uuidInvalid"
+
+        let sut = MainViewPresenter(service: service)
+        _ = try await sut.fetchRestaurants()
+
+        let isFavorite = sut.isFavoriteRestaurantBy(uuid: uuid)
+        XCTAssertTrue(isFavorite)
+    }
+
+    func testIsNotFavoriteRestaurantByUuid() {
+        let service = RestaurantServiceMock()
+        let sut = MainViewPresenter(service: service)
+
+        let isFavorite = sut.isFavoriteRestaurantBy(uuid: "uuidInvalid")
+        XCTAssertFalse(isFavorite)
+    }
+
+    // MARK: - onFavoriteValueChange
+    func testOnFavoriteValueChange() async throws {
+        let service = RestaurantServiceMock()
+        let uuid = service.uuids.first ?? "uuidInvalid"
+
+        let sut = MainViewPresenter(service: service)
+        _ = try await sut.fetchRestaurants()
+
+        sut.onFavoriteValueChange(uuid: uuid, isFavorite: true)
+        let isFavorite = sut.isFavoriteRestaurantBy(uuid: uuid)
+
+        XCTAssertTrue(isFavorite)
+    }
+
+    func testOnUnfavoriteValueChange() async throws {
+        let service = RestaurantServiceMock()
+        let uuid = service.uuids.first ?? "uuidInvalid"
+
+        let sut = MainViewPresenter(service: service)
+        _ = try await sut.fetchRestaurants()
+
+        sut.onFavoriteValueChange(uuid: uuid, isFavorite: false)
+        let isFavorite = sut.isFavoriteRestaurantBy(uuid: uuid)
+
+        XCTAssertFalse(isFavorite)
+    }
 }
