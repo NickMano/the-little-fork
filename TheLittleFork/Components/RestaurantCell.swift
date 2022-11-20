@@ -8,7 +8,7 @@
 import UIKit
 
 protocol RestaurantCellDelegate: AnyObject {
-    func onLikeButtonTaped(_ uuid: String, hasLiked: Bool)
+    func onLikeButtonTapped(_ uuid: String, hasLiked: Bool)
 }
 
 final class RestaurantCell: UITableViewCell {
@@ -196,7 +196,7 @@ extension RestaurantCell: ViewCodable {
 
 // MARK: - LikeButtonDelegate
 extension RestaurantCell: LikeButtonDelegate {
-    func onLikeButtonTaped(_ hasLiked: Bool) {
-        delegate?.onLikeButtonTaped(uuid, hasLiked: hasLiked)
+    func onLikeButtonTapped(_ hasLiked: Bool) {
+        delegate?.onLikeButtonTapped(uuid, hasLiked: hasLiked)
     }
 }

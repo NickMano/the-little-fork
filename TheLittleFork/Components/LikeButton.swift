@@ -9,7 +9,7 @@ import UIKit
 import SketchKit
 
 protocol LikeButtonDelegate: AnyObject {
-    func onLikeButtonTaped(_ hasLiked: Bool)
+    func onLikeButtonTapped(_ hasLiked: Bool)
 }
 
 final class LikeButton: UIView {
@@ -79,7 +79,7 @@ extension LikeButton: ViewCodable {
     }
 
     func setupTouchEvents() {
-        likeButton.addTarget(self, action: #selector(onTaped), for: .touchUpInside)
+        likeButton.addTarget(self, action: #selector(onTapped), for: .touchUpInside)
     }
 }
 
@@ -92,8 +92,8 @@ extension LikeButton {
 
 // MARK: - Private methods
 private extension LikeButton {
-    @objc func onTaped() {
+    @objc func onTapped() {
         hasLiked.toggle()
-        delegate?.onLikeButtonTaped(hasLiked)
+        delegate?.onLikeButtonTapped(hasLiked)
     }
 }

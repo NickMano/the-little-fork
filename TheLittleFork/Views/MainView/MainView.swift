@@ -141,7 +141,7 @@ extension MainView: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: - RestaurantCellDelegate
 extension MainView: RestaurantCellDelegate {
-    func onLikeButtonTaped(_ uuid: String, hasLiked: Bool) {
+    func onLikeButtonTapped(_ uuid: String, hasLiked: Bool) {
         presenter.onFavoriteValueChange(uuid: uuid, isFavorite: hasLiked)
     }
 }
