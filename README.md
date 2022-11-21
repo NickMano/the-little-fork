@@ -40,10 +40,6 @@ This project use Swift Package Manager
 * SwiftLint - to keep the good practices
 * SnapshotTesting - to make snapshot testing
 
-## Application
-
-* The application requests the data using the default URLSession
-
 ## Testing
 
 * This project have Unit testing and Snapshot testing.
