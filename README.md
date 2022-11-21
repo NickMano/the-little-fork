@@ -43,4 +43,4 @@ This project use Swift Package Manager
 ## Testing
 
 * This project have Unit testing and Snapshot testing.
-* The snapshots have been run on iPhone 12 Pro Max.
+* The snapshots have been run on iPhone 12 Pro Max. You can see the snapshots [here](Snapshots.md)
