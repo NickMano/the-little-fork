@@ -10,6 +10,8 @@
 		D00786BC292ABD1D005DD2F4 /* MainViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00786BB292ABD1D005DD2F4 /* MainViewError.swift */; };
 		D00786BE292AC57A005DD2F4 /* MainViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00786BD292AC57A005DD2F4 /* MainViewTest.swift */; };
 		D00786C0292AD431005DD2F4 /* MainViewPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00786BF292AD431005DD2F4 /* MainViewPresenterMock.swift */; };
+		D00786C3292BCDE0005DD2F4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D00786C5292BCDE0005DD2F4 /* Localizable.strings */; };
+		D00786C7292BCEEF005DD2F4 /* Strings+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00786C6292BCEEF005DD2F4 /* Strings+Extension.swift */; };
 		D024DB212924366B0093CA5B /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = D024DB202924366B0093CA5B /* SnapshotTesting */; };
 		D024DB26292525200093CA5B /* RestaurantCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB25292525200093CA5B /* RestaurantCellTest.swift */; };
 		D024DB2C2926BDE50093CA5B /* MainViewPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */; };
@@ -52,6 +54,8 @@
 		D00786BB292ABD1D005DD2F4 /* MainViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewError.swift; sourceTree = "<group>"; };
 		D00786BD292AC57A005DD2F4 /* MainViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTest.swift; sourceTree = "<group>"; };
 		D00786BF292AD431005DD2F4 /* MainViewPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenterMock.swift; sourceTree = "<group>"; };
+		D00786C4292BCDE0005DD2F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D00786C6292BCEEF005DD2F4 /* Strings+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extension.swift"; sourceTree = "<group>"; };
 		D012D0082923FA78007F8F4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D024DB25292525200093CA5B /* RestaurantCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCellTest.swift; sourceTree = "<group>"; };
 		D024DB2B2926BDE50093CA5B /* MainViewPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenterTest.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 				D04469D42922889200D05694 /* Assets.xcassets */,
 				D04469CB2922888400D05694 /* AppDelegate.swift */,
 				D04469CD2922888400D05694 /* SceneDelegate.swift */,
+				D00786C5292BCDE0005DD2F4 /* Localizable.strings */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				D024DB3429283DAA0093CA5B /* UITableViewCell+Extension.swift */,
+				D00786C6292BCEEF005DD2F4 /* Strings+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04469D82922889200D05694 /* LaunchScreen.storyboard in Resources */,
+				D00786C3292BCDE0005DD2F4 /* Localizable.strings in Resources */,
 				D04469D52922889200D05694 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +424,7 @@
 				D0446A162922C25200D05694 /* Fonts.swift in Sources */,
 				D0446A0B292291A600D05694 /* Colors.swift in Sources */,
 				D0446A0129228DB900D05694 /* MainView.swift in Sources */,
+				D00786C7292BCEEF005DD2F4 /* Strings+Extension.swift in Sources */,
 				D04469CC2922888400D05694 /* AppDelegate.swift in Sources */,
 				D00786BC292ABD1D005DD2F4 /* MainViewError.swift in Sources */,
 				D0446A212922F73100D05694 /* NetworkManager.swift in Sources */,
@@ -454,6 +462,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		D00786C5292BCDE0005DD2F4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D00786C4292BCDE0005DD2F4 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		D04469D62922889200D05694 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

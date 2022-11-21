@@ -26,7 +26,7 @@ struct RestaurantService: RestaurantServiceProtocol {
 
     private let userDefaults: UserDefaults
 
-    // This logic can be removed when the the favorites
+    // This logic can be removed when the favorites has a endpoint
     init(userDefaults: UserDefaults = .standard) {
         self.userDefaults = userDefaults
     }

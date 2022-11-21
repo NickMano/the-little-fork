@@ -12,7 +12,7 @@ final class MainViewError: UIView {
     // MARK: - Properties
     private lazy var message: UILabel = {
        let label = UILabel()
-        label.text = "🔌 Uppps..."
+        label.text = "GENERIC_ERROR_MESSAGE".localized
         label.font = .restaurantName
         label.textAlignment = .center
 
@@ -21,7 +21,7 @@ final class MainViewError: UIView {
 
     private lazy var retryButton: UIButton = {
        let button = UIButton()
-        button.setTitle("Retry", for: .normal)
+        button.setTitle("RETRY".localized, for: .normal)
         button.titleLabel?.font = .description
         button.backgroundColor = .accent
         button.layer.cornerRadius = 8
