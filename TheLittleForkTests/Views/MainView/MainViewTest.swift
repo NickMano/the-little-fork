@@ -14,6 +14,7 @@ final class MainViewTest: XCTestCase {
 
     func testLoadingState() {
         let view = MainView(frame: .zero)
+        view.overrideUserInterfaceStyle = .light
 
         assertSnapshot(matching: view, as: .image(size: iPhone12ProMaxSize))
     }
@@ -28,6 +29,7 @@ final class MainViewTest: XCTestCase {
     func testSuccessView() {
         let presenter = MainViewPresenterMock()
         let view = MainView(restaurants: getRestaurants(), presenter: presenter)
+        view.overrideUserInterfaceStyle = .light
 
         assertSnapshot(matching: view, as: .image(size: iPhone12ProMaxSize))
     }
@@ -42,15 +44,16 @@ final class MainViewTest: XCTestCase {
 
     func testErrorView() {
         let view = MainView(withError: true)
+        view.overrideUserInterfaceStyle = .light
 
-        assertSnapshot(matching: view, as: .image(size: iPhone12ProMaxSize), record: true)
+        assertSnapshot(matching: view, as: .image(size: iPhone12ProMaxSize))
     }
 
     func testErrorViewDarkMode() {
         let view = MainView(withError: true)
         view.overrideUserInterfaceStyle = .dark
 
-        assertSnapshot(matching: view, as: .image(size: iPhone12ProMaxSize), record: true)
+        assertSnapshot(matching: view, as: .image(size: iPhone12ProMaxSize))
     }
 }
 

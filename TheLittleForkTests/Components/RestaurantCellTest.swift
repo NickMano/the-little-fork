@@ -30,6 +30,7 @@ final class RestaurantCellTest: XCTestCase {
     func testCell() {
         sut.setRestaurant(getRestaurant())
         sut.setImage(defaultImage)
+        sut.overrideUserInterfaceStyle = .light
 
         assertSnapshot(matching: sut, as: .image)
     }
@@ -44,6 +45,7 @@ final class RestaurantCellTest: XCTestCase {
 
     func testCellWithoutBackgroundImage() {
         sut.setRestaurant(getRestaurant())
+        sut.overrideUserInterfaceStyle = .light
 
         assertSnapshot(matching: sut, as: .image)
     }
@@ -57,12 +59,14 @@ final class RestaurantCellTest: XCTestCase {
 
     func testCellWithoutOffer() {
         sut.setRestaurant(getRestaurant(withOffer: false))
+        sut.overrideUserInterfaceStyle = .light
 
         assertSnapshot(matching: sut, as: .image)
     }
 
     func testCellWithLargeName() {
         sut.setRestaurant(getRestaurant(withLargeName: true))
+        sut.overrideUserInterfaceStyle = .light
 
         assertSnapshot(matching: sut, as: .image)
     }
@@ -70,6 +74,7 @@ final class RestaurantCellTest: XCTestCase {
     func testSetIsFavorite() {
         sut.setRestaurant(getRestaurant())
         sut.setIsFavorite(true)
+        sut.overrideUserInterfaceStyle = .light
 
         assertSnapshot(matching: sut, as: .image)
     }
@@ -77,6 +82,7 @@ final class RestaurantCellTest: XCTestCase {
     func testSetIsNotFavorite() {
         sut.setRestaurant(getRestaurant())
         sut.setIsFavorite(false)
+        sut.overrideUserInterfaceStyle = .light
 
         assertSnapshot(matching: sut, as: .image)
     }
