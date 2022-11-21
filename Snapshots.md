@@ -16,8 +16,8 @@
 
 ## Like Button
 <p float="left">
-  <img src="https://github.com/NickMano/the-little-fork/blob/main/TheLittleForkTests/Components/__Snapshots__/LikeButtonTest/testUnlike.1.png?raw=true" width="428" height="926" />
-  <img src="https://github.com/NickMano/the-little-fork/blob/main/TheLittleForkTests/Components/__Snapshots__/LikeButtonTest/testLike.1.png?raw=true" width="428" height="926" />
+  <img src="https://github.com/NickMano/the-little-fork/blob/main/TheLittleForkTests/Components/__Snapshots__/LikeButtonTest/testUnlike.1.png?raw=true" />
+  <img src="https://github.com/NickMano/the-little-fork/blob/main/TheLittleForkTests/Components/__Snapshots__/LikeButtonTest/testLike.1.png?raw=true" />
 </p>
 
 ## Cell
